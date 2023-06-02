@@ -1,0 +1,242 @@
+*, 
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 18px;
+}
+
+body {
+  font-family: "Hanken Grotesk", Arial, Helvetica, sans-serif;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  width: 600px;
+  height: 420px;
+  display: flex;
+  background-color: white;
+  border-radius:25px;
+  box-shadow: 2px 2px 10px rgba(46, 43, 233, 0.15);
+}
+.left-section {
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(to bottom, hsl(252, 100%, 67%),hsl(241, 81%, 54%));
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  color: hsl(0, 0%, 100%);
+  padding: 1rem;
+}
+.left-section h1 {
+  color:hsl(221, 100%, 94%);
+  font-weight: 500;
+  font-size: 1rem;
+  margin-top: -0.7rem;
+}
+.left-section div + p {
+  color: hsl(0, 0%, 100%);
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-top: -1.2rem;
+}
+.score-details {
+  text-align: center;
+  color:hsl(221, 100%, 94%);
+  font-size: 0.7rem;
+  margin-top: -1.5rem;
+}
+.circle {
+  width: 130px;
+  height: 130px;
+  background: linear-gradient(to bottom, hsla(256, 72%, 46%, 1),hsla(241, 72%, 46%, 0));
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -0.9rem;
+}
+.circle p {
+  font-size: 0.7rem;
+  color: hsl(0, 0%, 80%);
+  text-align: center;
+}
+.circle p span {
+  display: block;
+  text-align: center;
+  font-weight: 700;
+  font-size: 2.8rem;
+  color: hsl(0, 0%, 100%);
+  
+}
+
+.right-section {
+  width: 50%;
+  height: 100%;
+  background-color: white;
+  border-radius:0 25px 25px 0;
+  display: flex;
+  flex-direction: column;
+  padding: 1.85rem 1.5rem;
+  color: hsl(224, 30%, 27%);
+  font-weight: 700;
+}
+.right-section p:first-child {
+  margin-bottom: 0.5rem;
+}
+.skill {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  padding: 0.7rem;
+  border-radius: 5px;
+  margin-top: 01rem;
+  position: relative;
+}
+.skill img {
+  width: 16px;
+  margin-right: 0.4rem;
+}
+.skill p {
+  font-size: 0.7rem;
+}
+.skill-1 .first-p {
+  color: hsl(0, 100%, 67%);
+}
+.skill-2 .first-p {
+  color: hsl(39, 100%, 56%);
+}
+.skill-3 .first-p {
+  color: hsl(166, 100%, 37%);
+}
+.skill-4 .first-p {
+  color: hsl(234, 85%, 45%);
+}
+
+.second-p {
+  position: absolute;
+  right: 0.5rem;
+}
+
+.second-p span {
+  font-size: 0.65rem;
+  color: hsla(224, 30%, 27%, 0.7);
+
+}
+
+.skill-1 {
+  background-color: hsla(0, 100%, 67%, 0.1);
+}
+.skill-2 {
+  background-color: hsla(39, 100%, 56%, 0.1);
+}
+.skill-3 {
+  background-color: hsla(166, 100%, 37%, 0.1);
+}
+.skill-4 {
+  background-color: hsla(234, 85%, 45%, 0.1);
+}
+
+button {
+  margin-top: 2rem;
+  height: 2.1rem;
+  border: none;
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(224, 30%, 27%);
+  padding: 0.5rem;
+  font-size: 0.75rem;
+  border-radius: 1rem;
+  cursor: pointer;
+  transition: background-color 0.25s ease;
+}
+button:hover {
+  
+  background-color: hsl(241, 81%, 54%);
+}
+
+.attribution {
+  font-size: 55%;
+  text-align: center;
+  background-color: rgb(204, 204, 204);
+  height: 3vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+  font-size: 100%;
+  margin-left: 5px;
+  font-weight: bold;
+}
+
+@media (width<=420px) {
+  main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius:0px;
+    box-shadow: none;
+}
+.left-section {
+  width: 100%;
+  height: 100%;
+  border-radius: 0 0 25px 25px;
+}
+.left-section h1 {
+  font-size: 0.9rem;
+  margin-top: -1rem;
+}
+.left-section div + p {
+  font-size: 1.2rem;
+  margin: -1rem 0 1rem 0;
+}
+.score-details {
+  font-size: 0.7rem;
+  max-width: 11rem;
+}
+.score-details br {
+  display: none;
+}
+.circle {
+  width: 100px;
+  height: 100px;
+  margin: -0.5rem 0 0.8rem 0;
+}
+.circle p {
+  font-size: 0.6rem;
+}
+.circle p span {
+  font-size: 2.1rem;
+}
+.right-section {
+  width: 100%;
+  height: 100%;
+  padding: 1.85rem 1.5rem;
+ 
+}
+.right-section p:first-child {
+  margin: -0.8rem 0 0 0;
+}
+.skill img {
+  width: 17px;
+}
+.skill p {
+  font-size: 0.75rem;
+}
+}
